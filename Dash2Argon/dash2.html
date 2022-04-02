@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta http-equiv="refresh" content="30">-->
+    <title>Site 2</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style3.css">
+    <script type="text/javascript" src="cotacao2.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bxl-angular'></i>
+                <div class="logo_name1">argon | </div>
+                <i class='bx bxl-c-plus-plus'></i>
+                <div class="logo_name2">chakra</div>
+            </div>
+            <i class='bx bxs-left-arrow' ></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="#">
+                    <i class='bx bxs-home'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-bar-chart' ></i>
+                    <span class="links_name">Tables</span>
+                </a>
+                <span class="tooltip">Tables</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-credit-card'></i>
+                    <span class="links_name">Billing</span>
+                </a>
+                <span class="tooltip">Billings</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-wrench' ></i>
+                    <span class="links_name">RTL</span>
+                </a>
+                <span class="tooltip">RTL</span>
+            </li>
+            <li>
+                <div class="Pages">Account Pages</div>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-user' ></i>
+                    <span class="links_name">Profile</span>
+                </a>
+                <span class="tooltip">Profile</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-file-blank' ></i>
+                    <span class="links_name">Sign in</span>
+                </a>
+                <span class="tooltip">Sign in</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-rocket' ></i>
+                    <span class="links_name">Sign up</span>
+                </a>
+                <span class="tooltip">Sign up</span>
+            </li>
+        </ul>
+        <img src="MySiteFiles/icon-documentation.png" alt="">
+    </div>
+    <main class="dashboard">
+        <div class="page">Pages / Dashboard
+            <h1>Dashboard</h1>
+        </div>
+        <div class="rightmenu">
+            <div class="searchbox">
+                <i class='bx bx-search' ></i>
+                <input type="text" placeholder="Type here...">
+                <span class="searchtip">Search</span>
+            </div>
+            <div class="profile">
+                <i class='bx bxs-user' ></i>
+                <span>Profile</span>
+            </div>
+            <div class="settings">
+                <i class='bx bxs-cog' ></i>
+            </div>
+            <span class="set">Settings</span>
+            <div class="notifications">
+                <i class='bx bxs-bell' ></i>
+            </div>
+            <span class="not">Notifications</span>
+        </div>
+        <div class="today_movement">
+            <div class="box">
+                <h2 class="boxtitle">TODAY'S MONEY</h2>
+                <h2 class="value">$53,897</h2>
+                <i class='bx bxs-wallet icon' ></i>
+                <h3 class="variation pos">+3.48%</h3>
+                <p class="boxp">Since last month</p>
+            </div>
+            <div class="box">
+                <h2 class="boxtitle">TODAY'S USERS</h2>
+                <h2 class="value">3,200</h2>
+                <i class='bx bx-globe icon' ></i>
+                <h3 class="variation pos">+5.20%</h3>
+                <p class="boxp">Since last month</p>
+            </div>
+            <div class="box">
+                <h2 class="boxtitle">NEW CLIENTS</h2>
+                <h2 class="value">+2,503</h2>
+                <i class='bx bxs-file icon' ></i>
+                <h3 class="variation neg">-2.82%</h3>
+                <p class="boxp">Since last month</p>
+            </div>
+            <div class="box">
+                <h2 class="boxtitle">TOTAL SALES</h2>
+                <h2 class="value">$173,000</h2>
+                <i class='bx bx-cart-alt icon' ></i>
+                <h3 class="variation pos">+8.12%</h3>
+                <p class="boxp">Since last month</p>
+            </div>
+        </div>
+        <div class="graficos">
+            <div class="graph1">
+                <img src="MySiteFiles/Second Card.png" alt="" height="360">
+            </div>
+            <div class="graph2">
+                <img src="MySiteFiles/Bar Chart.png" alt="" height="360">
+            </div>
+            <div class="cotation">
+                <table>
+                    <tr>
+                        <th>CoinPair</th>
+                        <th>Price</th>
+                        <TH>24hrs Variation(%)</TH>
+                    </tr>
+                    <tr>
+                        <td>BTC/BRL</td>
+                        <td id="btc"></td>
+                        <td id="btcvar" class="varb"></td>
+                    </tr>
+                    <tr>
+                        <td>USD/BRL</td>
+                        <td id="usd"></td>
+                        <td id="usdvar" class="varu"></td>
+                    </tr>
+                    <tr>
+                        <td>EUR/USD</td>
+                        <td id="euru"></td>
+                        <td id="euruvar">No Data</td>
+                    </tr>
+                    <tr>
+                        <td>EUR/BRL</td>
+                        <td id="eurb"></td>
+                        <td id="eurbvar" class="vare"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="tables">
+            <div class="table1">
+                <div class="table1info">
+                    <h2>Page visits</h2>
+                    <button>See all</button>
+                </div>
+                <table class="table_1">
+                    <tr class="table_head">
+                        <th>Page name</th>
+                        <th>Visitors</th>
+                        <th>Unique users</th>
+                        <th>Bonce rate</th>
+                    </tr>
+                    <tr class="tbrow">
+                        <td>/argon/</td>
+                        <td>4,569</td>
+                        <td>340</td>
+                        <td>46,53%</td>                       
+                    </tr>
+                    <tr class="tbrow">
+                        <td>/argon/index.html</td>
+                        <td>3,985</td>
+                        <td>319</td>
+                        <td>46,53%</td>
+                    </tr>
+                    <tr class="tbrow">
+                        <td>/argon/charts.html</td>
+                        <td>3,513</td>
+                        <td>294</td>
+                        <td>36,49%</td> 
+                    </tr>
+                    <tr class="tbrow">
+                        <td>/argon/tables.html</td>
+                        <td>2,050</td>
+                        <td>147</td>
+                        <td>50,87%</td> 
+                    </tr>
+                    <tr class="tbrow">
+                        <td>/argon/profile.html</td>
+                        <td>1,795</td>
+                        <td>190</td>
+                        <td>46,53%</td> 
+                    </tr>
+                </table>
+            </div>
+            <div class="table2">
+                <div class="table2info">
+                    <h2>Social traffic</h2>
+                    <button class="seeall">See all</button>
+                </div>
+                <table class="table_2">
+                    <tr class="table_head">
+                        <th>referral</th>
+                        <th>vistors</th>
+                        <th>Percentage</th>
+                    </tr>
+                    <tr class="tbrow">
+                        <td>Facebook</td>
+                        <td>1,480</td>
+                        <td>60%</td>
+                    </tr>
+                    <tr class="tbrow">
+                        <td>Facebook</td>
+                        <td>5,480</td>
+                        <td>70%</td>
+                    </tr>
+                    <tr class="tbrow">
+                        <td>Google</td>
+                        <td>4,807</td>
+                        <td>80%</td>
+                    </tr>
+                    <tr class="tbrow">
+                        <td>Instagram</td>
+                        <td>3,678</td>
+                        <td>75%</td>
+                    </tr>
+                    <tr class="tbrow">
+                        <td>Twitter</td>
+                        <td>2,645</td>
+                        <td>30%</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script>
+        let btn = document.querySelector(".bxs-left-arrow");
+        let sidebar = document.querySelector(".sidebar");
+        let rm = document.querySelector(".rightmenu");
+        btn.onclick = function(){
+            sidebar.classList.toggle("active")
+            rm.classList.toggle("active")
+        }
+    </script>
+</body>
+</html>
