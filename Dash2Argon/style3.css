@@ -224,7 +224,7 @@ main{
     pointer-events: none;
 }
 .sidebar.active ~ main{
-    width: calc(100% + 240px);
+    width: calc(125% + 240px);
     left: 120px;
     transition: all .5s ease;
 }
